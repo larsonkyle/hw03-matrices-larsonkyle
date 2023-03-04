@@ -4,7 +4,7 @@ void fileIO(string filename, int A[][AR_CAP], int& n1, int& m1, int B[][AR_CAP],
 	ifstream iFile;
 //	filename = "input.txt";
 
-	iFile.open(filename.c_str());
+	iFile.open(filename);
 	//if (iFile.is_open()) {
 		iFile >> n1;
 		iFile >> m1;
