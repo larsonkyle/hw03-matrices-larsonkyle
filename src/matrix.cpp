@@ -1,7 +1,7 @@
 #include "matrix.h"
 
-void fileIO(std::string filename, int A[][AR_CAP], int& n1, int& m1, int B[][AR_CAP], int& n2, int& m2) {
-	std::ifstream iFile;
+void fileIO(string filename, int A[][AR_CAP], int& n1, int& m1, int B[][AR_CAP], int& n2, int& m2) {
+	ifstream iFile;
 //	filename = "input.txt";
 
 	iFile.open(filename.c_str());
@@ -55,13 +55,13 @@ double matrixDeterminant3D(int M[][AR_CAP], int n, int m){
 }
 
 void print2DMatrix(const int M[][AR_CAP], int n1, int m1) {
-	std::cout << "2D Matrix: " << std::endl;
+	cout << "2D Matrix: " << endl;
 
 	for (int rows = 0; rows < m1; rows++){
 		for (int cols = 0; cols < n1; cols++){
-			std::cout << M[rows][cols];
+			cout << M[rows][cols];
 		}
-		std::cout << std::endl;
+		cout << endl;
 	}
 
 }
