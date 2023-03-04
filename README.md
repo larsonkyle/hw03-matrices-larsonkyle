@@ -1,10 +1,8 @@
 # HW03: Matrix Operations Series Using C++ Arrays and Loops
 
-## Firstname Lastname
+## Kyle Larson
 
-TODO - Update your name in this readme
-
-TODO - Add a badge from github actions here
+![hw03](https://github.com/saddleback-college-cs1b/hw03-matrices-larsonkyle/actions/workflows/hw03_tests.yml/badge.svg)
 
 ## Problem Statement
 
