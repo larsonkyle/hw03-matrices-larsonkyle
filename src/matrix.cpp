@@ -5,7 +5,7 @@ void fileIO(std::string filename, int A[][AR_CAP], int& n1, int& m1, int B[][AR_
 //	filename = "input.txt";
 
 	iFile.open(filename.c_str());
-	if (iFile.is_open()) {
+	//if (iFile.is_open()) {
 		iFile >> n1;
 		iFile >> m1;
 
@@ -19,9 +19,9 @@ void fileIO(std::string filename, int A[][AR_CAP], int& n1, int& m1, int B[][AR_
 		for (int rows = 0; rows < m2; rows++)
 			for (int cols = 0; cols < n2; cols)
 				iFile >> B[rows][cols];
-	}
-	else
-		std::cout << "ERROR: file did not open." << std::endl;
+	//}
+	//else
+		//std::cout << "ERROR: file did not open." << std::endl;
 
 iFile.close();
 }
