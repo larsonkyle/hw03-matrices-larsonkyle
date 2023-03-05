@@ -43,7 +43,7 @@ void matrixSubtraction(int A[][AR_CAP], int n1, int m1, int B[][AR_CAP], int n2,
 void matrixMultiplication(int A[][AR_CAP], int n1, int m1, int B[][AR_CAP], int n2, int m2, int res[][AR_CAP]){
 	for (int rows = 0; rows < m1; rows++)      
 		for (int cols = 0; cols < n1; cols++) 
-			res[rows][cols] = A[rows][cols] * B[rows][cols];
+			res[rows][cols] = A[rows][cols] * B[cols][rows];
 }
 
 void matrixTranspose(int M[][AR_CAP], int n, int m, int res[][AR_CAP]){
@@ -61,7 +61,7 @@ void print2DMatrix(const int M[][AR_CAP], int n1, int m1) {
 
 	for (int rows = 0; rows < m1; rows++){
 		for (int cols = 0; cols < n1; cols++){
-			cout << M[rows][cols];
+			cout << M[rows][cols] << " ";
 		}
 		cout << endl;
 	}
