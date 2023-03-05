@@ -55,7 +55,9 @@ void matrixTranspose(int M[][AR_CAP], int n, int m, int res[][AR_CAP]){
 }
 
 double matrixDeterminant3D(int M[][AR_CAP], int n, int m){
-	return (M[0][0] * ((M[1][1] * M[2][2]) - (M[1][2] * M[2][1]))) - (M[0][1] * ((M[1][0] * M[2][2]) - (M[2][0] * M[1][2]))) - (M[0][2] * ((M[1][0] * M[2][1]) - (M[1][1] * M[2][0])));
+	return (M[0][0] * ((M[1][1] * M[2][2]) - (M[2][1] * M[1][2]))) - 
+		(M[0][1] * ((M[1][0] * M[2][2]) - (M[2][0] * M[1][2]))) + 
+		(M[0][2] * ((M[1][0] * M[2][1]) - (M[1][1] * M[2][0])));
 }
 
 void print2DMatrix(const int M[][AR_CAP], int n1, int m1) {
