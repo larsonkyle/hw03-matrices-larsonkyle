@@ -44,7 +44,7 @@ void matrixMultiplication(int A[][AR_CAP], int n1, int m1, int B[][AR_CAP], int 
 	for (int r = 0; r < m1; r++)      
 		for (int c = 0; c < n2; c++)
 			for (int k = 0; k < n1; k++)
-				res[r][c] += A[r][k] * B[k][c]);
+				res[r][c] += A[r][k] * B[k][c];
 			
 }
 
